@@ -1,0 +1,24 @@
+.default-btn {
+   display           : inline-block;
+   font-family       : 'Roboto', sans-serif;
+   color             : #ffffff;
+   font-size         : 14px;
+   font-weight       : 500;
+   line-height       : 24px;
+   padding           : 8px 30px 8px 24px;
+   letter-spacing    : 0.35px;
+   border            : 1px solid #ffc222;
+   border-right-width: 21px;
+   cursor            : pointer;
+   position          : relative;
+
+   &:after {
+      content    : '\f105';
+      font-family: 'icomoon';
+      position   : absolute;
+      color      : #fff;
+      top        : 50%;
+      right      : -13px;
+      transform  : translateY(-50%);
+   }
+}

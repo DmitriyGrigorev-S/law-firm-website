@@ -1,0 +1,37 @@
+.about {
+   background-image   : url(../images/bg-about.jpg);
+   background-repeat  : no-repeat;
+   background-size    : cover;
+   background-position: center;
+   min-height         : 300px;
+   padding            : 25px 0px 45px;
+
+   @media (max-width: 768px) {
+      padding: 10px 0 35px;
+   }
+
+   &__inner {
+      max-width: 545px;
+   }
+
+   &__title {
+      color      : #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size  : 24px;
+      font-weight: 500;
+      line-height: 24px;
+      padding    : 10px 0px 25px;
+      margin     : 0;
+
+      @media (max-width: 768px) {
+         padding: 10px 0px 10px;;
+      }
+   }
+
+   &__text {
+      color         : #d3d2d2;
+      line-height   : 24px;
+      letter-spacing: 0.14px;
+      margin-bottom : 30px;
+   }
+}

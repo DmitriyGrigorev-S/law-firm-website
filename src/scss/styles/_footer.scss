@@ -1,0 +1,128 @@
+.footer {
+
+   &__content {
+      background-color: #595959;
+      padding         : 20px 0px 30px;
+   }
+
+   &__inner {
+      display        : flex;
+      justify-content: space-between;
+
+      @media (max-width: 1024px) {
+         display: block;
+      }
+   }
+
+   &__info {
+      max-width: 360px;
+
+      @media (max-width: 1024px) {
+         // max-width: 450px;
+         margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+         & .header__btn {
+            &:before {
+               display: block;
+            }
+         }
+      }
+   }
+
+   &__title {
+      font-weight   : 500;
+      font-size     : 16px;
+      line-height   : 36px;
+      color         : #ffffff;
+      font-family   : 'Roboto', sans-serif;
+      letter-spacing: 0.8px;
+      margin        : 0;
+   }
+
+   &__text {
+      color        : #d3d2d2;
+      font-size    : 14px;
+      font-weight  : 400;
+      line-height  : 18px;
+      font-family  : 'Roboto', sans-serif;
+      margin-bottom: 20px;
+   }
+
+   &__btn {
+      float: none;
+   }
+
+   &__list {
+      padding-top: 10px;
+
+      li {
+         margin-top: 10px;
+      }
+
+      a {
+         font-size     : 16px;
+         line-height   : 24px;
+         color         : #fff;
+         letter-spacing: 0.4px;
+         font-weight   : 400;
+         font-family   : 'Roboto', sans-serif;
+         padding-left  : 33px;
+         position      : relative;
+
+         &:before {
+            content    : '\f003';
+            font-family: 'icomoon';
+            position   : absolute;
+            left       : 0;
+            color      : #ffc222;
+         }
+      }
+
+      .footer__phone {
+         &:before {
+            font-family: 'icomoon';
+            content    : '\f095';
+            left       : 3px;
+         }
+      }
+
+      .footer__adress {
+         &:before {
+            font-family: 'icomoon';
+            content    : '\f041';
+            left       : 3px;
+         }
+      }
+   }
+
+   &__map {
+      padding-top: 10px;
+      max-width  : 630px;
+      width      : 100%;
+
+      iframe {
+         width: 100%;
+      }
+
+      @media (max-width: 1024px) {
+         max-width: 100%;
+      }
+   }
+
+   &__copy {
+      background-color: #303030;
+
+      .copy__text {
+         color         : #ffffff;
+         font-size     : 12px;
+         font-weight   : 400;
+         line-height   : 40px;
+         letter-spacing: 0.6px;
+         text-align    : center;
+         font-family   : 'Roboto', sans-serif;
+         height        : 40px;
+      }
+   }
+}

@@ -1,0 +1,103 @@
+.slider {
+   background-image   : url(../images/slider-img/images-1.jpg);
+   background-repeat  : no-repeat;
+   background-size    : cover;
+   background-position: center;
+   min-height         : 500px;
+
+   @media (max-width: 768px) {
+      min-height: 390px;
+   }
+
+   &__inner {
+      position: relative;
+   }
+
+   &__item {
+      text-align : center;
+      padding-top: 110px;
+      min-width  : 665px;
+      margin     : 0 auto;
+
+      @media (max-width: 768px) {
+         min-width  : 0;
+         width      : 100%;
+         padding-top: 90px;
+      }
+   }
+
+   &__title {
+      color         : #ffffff;
+      font-family   : 'Roboto', sans-serif;
+      font-size     : 30px;
+      font-weight   : 500;
+      line-height   : 36px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom : 20px;
+
+      @media (max-width: 768px) {
+         font-size    : 20px;
+         line-height  : 25px;
+         margin-bottom: 10px;
+      }
+   }
+
+   &__text {
+      color        : #d3d2d2;
+      font-size    : 18px;
+      font-weight  : 400;
+      line-height  : 24px;
+      margin-bottom: 50px;
+
+      @media (max-width: 768px) {
+         font-size  : 15px;
+         line-height: 18px;
+      }
+   }
+}
+
+.slick-btn {
+   position        : absolute;
+   top             : 70%;
+   z-index         : 3;
+   width           : 40px;
+   height          : 40px;
+   border          : 1px solid #ffffff;
+   cursor          : pointer;
+   outline         : none;
+   font-family     : 'icomoon';
+   background-color: #ffc222;
+
+   &:before {
+      position : absolute;
+      top      : 50%;
+      left     : 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   &__prev {
+      left: 0;
+
+      &:before {
+         content: '\f104';
+         color  : #fff;
+      }
+   }
+
+   &__next {
+      right: 0;
+
+      &:before {
+         content: '\f105';
+         color  : #fff;
+      }
+   }
+
+   @media (max-width: 1024px) {}
+}
+
+.slick-btn.slick-disabled {
+   cursor          : default;
+   background-color: transparent;
+}
